@@ -1,9 +1,10 @@
 package flashs
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
 	"strconv"
+
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type YangTzeDecoder struct {

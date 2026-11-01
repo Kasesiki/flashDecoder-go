@@ -1,8 +1,8 @@
 package flashs
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type SkHynix3DDecoder struct{}

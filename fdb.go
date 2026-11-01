@@ -2,9 +2,10 @@ package flashdecoder
 
 import (
 	"errors"
-	"flashDecoder/utils"
 	"sort"
 	"strings"
+
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type FdbEntry struct {

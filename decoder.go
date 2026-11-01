@@ -2,13 +2,14 @@ package flashdecoder
 
 import (
 	"errors"
-	"flashDecoder/flashids"
-	"flashDecoder/flashs"
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
 	"fmt"
 	"regexp"
 	"strings"
+
+	"github.com/Kasesiki/flashDecoder-go/flashids"
+	"github.com/Kasesiki/flashDecoder-go/flashs"
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type Decoder interface {

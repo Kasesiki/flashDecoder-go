@@ -1,8 +1,8 @@
 package flashs
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type SkHynixDecoder struct {
@@ -63,12 +63,12 @@ func (s SkHynixDecoder) Decode(partNumber string) flashinfo.Flashinfo {
 	if utils.Inarray(packageMaterial, []string{"R", "P"}) {
 		info.Lead_Free = true
 		if packageMaterial == "R" {
-			info.Halogen_Free = true;
+			info.Halogen_Free = true
 		}
 	} else if packageMaterial == "L" {
 		info.Lead_Free = false
 	} else if packageMaterial == "A" {
-		info.Wafer = true;
+		info.Wafer = true
 	}
 
 	utils.RetShiftChars(&partNumber, 1)

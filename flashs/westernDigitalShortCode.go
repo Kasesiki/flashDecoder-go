@@ -1,9 +1,10 @@
 package flashs
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
 	"strings"
+
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type WesternDigitalShortCodeDecoder struct{}

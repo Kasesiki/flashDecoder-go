@@ -1,8 +1,8 @@
 package flashdecoder
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 func GenItoString(info flashinfo.Flashinfo) string {

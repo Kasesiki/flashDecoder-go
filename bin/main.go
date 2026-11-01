@@ -3,10 +3,11 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	flashdecoder "flashDecoder"
-	flashinfo "flashDecoder/info"
+	flashdecoder "github.com/Kasesiki/flashDecoder-go"
 	"fmt"
 	"os"
+
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
 )
 
 func main() {

@@ -1,9 +1,10 @@
 package flashs
 
 import (
-	flashinfo "flashDecoder/info"
-	"flashDecoder/utils"
 	"strconv"
+
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
+	"github.com/Kasesiki/flashDecoder-go/utils"
 )
 
 type IntelDecoder struct {
@@ -90,7 +91,6 @@ func (decoder IntelDecoder) Decode(partNumber string) flashinfo.Flashinfo {
 		"4A": 8,
 		"A8": 8,
 	}, 0)
-
 
 	if cap[2] >= '0' && cap[2] <= '9' {
 		return MicronDecoderDefault().Decode(info.PartNumber)
@@ -184,7 +184,7 @@ func (decoder IntelDecoder) Decode(partNumber string) flashinfo.Flashinfo {
 		"K": "3D4 144L",
 	}, "")
 	info.Process = lithhography
-	
+
 	info.Generation, _ = strconv.Atoi(utils.RetShiftChars(&partNumber, 1))
 
 	if info.CellLevel == "TLC" && lithhography == "3D1 32L" && info.Capacity == "1Tbit" {

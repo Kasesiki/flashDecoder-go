@@ -1,9 +1,10 @@
 package flashids
 
 import (
-	flashinfo "flashDecoder/info"
 	"fmt"
 	"strings"
+
+	flashinfo "github.com/Kasesiki/flashDecoder-go/info"
 )
 
 type BasicIDDecoder struct{}
